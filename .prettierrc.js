@@ -15,4 +15,4 @@ module.exports = {
     tabWidth: 4,
     // 换行符使用 lf 结尾是 \n \r \n\r auto
     endOfLine: 'lf',
-}
+};
