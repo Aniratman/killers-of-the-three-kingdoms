@@ -1,0 +1,47 @@
+{
+    "CardConfig": {
+        "FigureAssignment": [{
+                "Emperor": "1",
+                "Minister": "1",
+                "Rebel": "1",
+                "Provocateur": "1"
+            },
+            {
+                "Emperor": "1",
+                "Minister": "1",
+                "Rebel": "2",
+                "Provocateur": "1"
+            },
+            {
+                "Emperor": "1",
+                "Minister": "1",
+                "Rebel": "3",
+                "Provocateur": "1"
+            },
+            {
+                "Emperor": "1",
+                "Minister": "1",
+                "Rebel": "2",
+                "Provocateur": "2"
+            },
+            {
+                "Emperor": "1",
+                "Minister": "2",
+                "Rebel": "3",
+                "Provocateur": "1"
+            },
+            {
+                "Emperor": "1",
+                "Minister": "2",
+                "Rebel": "4",
+                "Provocateur": "1"
+            },
+            {
+                "Emperor": "1",
+                "Minister": "2",
+                "Rebel": "3",
+                "Provocateur": "2"
+            }
+        ]
+    }
+}

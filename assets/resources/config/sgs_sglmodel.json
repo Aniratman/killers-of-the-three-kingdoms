@@ -1,0 +1,25 @@
+{
+    "SingleModel": {
+        "Model": [{
+                "modelid": "16",
+                "singleparam": "3",
+                "modeldesc": "5人军争场"
+            },
+            {
+                "modelid": "15",
+                "singleparam": "4",
+                "modeldesc": "8人军争场"
+            },
+            {
+                "modelid": "5",
+                "singleparam": "1",
+                "modeldesc": "5人标准场"
+            },
+            {
+                "modelid": "1",
+                "singleparam": "2",
+                "modeldesc": "8人标准场"
+            }
+        ]
+    }
+}

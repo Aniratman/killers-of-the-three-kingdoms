@@ -1,0 +1,1712 @@
+{
+    "CharacterInGameConfig": {
+        "CharacterUseConfig": {
+            "DeafultAssignRatio": "10",
+            "OnlyBeginnerUseExpLv": "0",
+            "UseInfo": [{
+                    "ChrId": "1",
+                    "ChrName": "刘备",
+                    "ExpLevelReq": "0",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "15",
+                    "ChrName": "曹操",
+                    "ExpLevelReq": "0",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "8",
+                    "ChrName": "孙权",
+                    "ExpLevelReq": "0",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "6",
+                    "ChrName": "马超",
+                    "ExpLevelReq": "0",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "17",
+                    "ChrName": "夏侯惇",
+                    "ExpLevelReq": "0",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "3",
+                    "ChrName": "张飞",
+                    "ExpLevelReq": "1",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "18",
+                    "ChrName": "张辽",
+                    "ExpLevelReq": "2",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "7",
+                    "ChrName": "黄月英",
+                    "ExpLevelReq": "3",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "20",
+                    "ChrName": "郭嘉",
+                    "ExpLevelReq": "4",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "2",
+                    "ChrName": "关羽",
+                    "ExpLevelReq": "5",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "10",
+                    "ChrName": "吕蒙",
+                    "ExpLevelReq": "6",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "23",
+                    "ChrName": "吕布",
+                    "ExpLevelReq": "6",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "25",
+                    "ChrName": "孙尚香",
+                    "ExpLevelReq": "6",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "21",
+                    "ChrName": "甄姬",
+                    "ExpLevelReq": "7",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "11",
+                    "ChrName": "黄盖",
+                    "ExpLevelReq": "7",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "13",
+                    "ChrName": "大乔",
+                    "ExpLevelReq": "7",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "4",
+                    "ChrName": "诸葛亮",
+                    "ExpLevelReq": "8",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "5",
+                    "ChrName": "赵云",
+                    "ExpLevelReq": "8",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "24",
+                    "ChrName": "貂蝉",
+                    "ExpLevelReq": "8",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "12",
+                    "ChrName": "周瑜",
+                    "ExpLevelReq": "9",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "16",
+                    "ChrName": "司马懿",
+                    "ExpLevelReq": "9",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "19",
+                    "ChrName": "许褚",
+                    "ExpLevelReq": "9",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "9",
+                    "ChrName": "甘宁",
+                    "ExpLevelReq": "10",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "14",
+                    "ChrName": "陆逊",
+                    "ExpLevelReq": "10",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "22",
+                    "ChrName": "华佗",
+                    "ExpLevelReq": "10",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "28",
+                    "ChrName": "夏侯渊",
+                    "ExpLevelReq": "11",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "26",
+                    "ChrName": "黄忠",
+                    "ExpLevelReq": "11",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "29",
+                    "ChrName": "曹仁",
+                    "ExpLevelReq": "12",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "31",
+                    "ChrName": "周泰",
+                    "ExpLevelReq": "12",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "27",
+                    "ChrName": "魏延",
+                    "ExpLevelReq": "13",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "30",
+                    "ChrName": "小乔",
+                    "ExpLevelReq": "13",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "32",
+                    "ChrName": "张角",
+                    "ExpLevelReq": "14",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "10",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "101",
+                    "ChrName": "公孙瓒",
+                    "AssignVIPLevelReq": "3",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "102",
+                    "ChrName": "SP貂蝉",
+                    "AssignVIPLevelReq": "3",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "103",
+                    "ChrName": "SP孙尚香",
+                    "AssignVIPLevelReq": "3",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "100",
+                    "ChrName": "袁术",
+                    "AssignVIPLevelReq": "3",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "107",
+                    "ChrName": "SP马超",
+                    "AssignVIPLevelReq": "3",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "105",
+                    "ChrName": "SP庞德",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "110",
+                    "ChrName": "SP贾诩",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "108",
+                    "ChrName": "SP赵云2012",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "109",
+                    "ChrName": "SP貂蝉2012",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "111",
+                    "ChrName": "SP曹仁2012",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "112",
+                    "ChrName": "SP蔡文姬",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "34",
+                    "ChrName": "典韦",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "35",
+                    "ChrName": "荀彧",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "36",
+                    "ChrName": "庞统",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "37",
+                    "ChrName": "卧龙诸葛亮",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "38",
+                    "ChrName": "太史慈",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "39",
+                    "ChrName": "庞德",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "40",
+                    "ChrName": "颜良 文丑",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "41",
+                    "ChrName": "袁绍",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "42",
+                    "ChrName": "徐晃",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "43",
+                    "ChrName": "曹丕",
+                    "AssignVIPLevelReq": "1",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "44",
+                    "ChrName": "孙坚",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "45",
+                    "ChrName": "董卓",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "46",
+                    "ChrName": "祝融",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "47",
+                    "ChrName": "孟获",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "49",
+                    "ChrName": "鲁肃",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "50",
+                    "ChrName": "张郃",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "51",
+                    "ChrName": "邓艾",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "52",
+                    "ChrName": "姜维",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "53",
+                    "ChrName": "刘禅",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "54",
+                    "ChrName": "孙策",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "55",
+                    "ChrName": "张昭 张纮",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "56",
+                    "ChrName": "左慈",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "57",
+                    "ChrName": "蔡文姬",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "154",
+                    "ChrName": "法正",
+                    "AssignVIPLevelReq": "4",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "156",
+                    "ChrName": "马谡",
+                    "AssignVIPLevelReq": "4",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "159",
+                    "ChrName": "徐庶",
+                    "AssignVIPLevelReq": "0",
+                    "AppointVIPLevelReq": "0",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "160",
+                    "ChrName": "于禁",
+                    "AssignVIPLevelReq": "4",
+                    "AppointVIPLevelReq": "1",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "152",
+                    "ChrName": "高顺",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "158",
+                    "ChrName": "徐盛",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "151",
+                    "ChrName": "曹植",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "157",
+                    "ChrName": "吴国太",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "161",
+                    "ChrName": "张春华",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "153",
+                    "ChrName": "陈宫",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "155",
+                    "ChrName": "凌统",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "163",
+                    "ChrName": "王异",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "0",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "165",
+                    "ChrName": "关兴&张苞",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "40",
+                    "CanUseDianJiangKa": "1",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "70",
+                    "ChrName": "叶",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "0",
+                    "CanUseDianJiangKa": "0",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "71",
+                    "ChrName": "孙",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "0",
+                    "CanUseDianJiangKa": "0",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "72",
+                    "ChrName": "伏完",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "0",
+                    "CanUseDianJiangKa": "0",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "73",
+                    "ChrName": "汉献帝",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "0",
+                    "CanUseDianJiangKa": "0",
+                    "CanUseShenJiangKa": "0"
+                },
+                {
+                    "ChrId": "74",
+                    "ChrName": "灵雎",
+                    "AssignVIPLevelReq": "65536",
+                    "AppointVIPLevelReq": "65536",
+                    "AssignRatio": "0",
+                    "CanUseDianJiangKa": "0",
+                    "CanUseShenJiangKa": "0"
+                }
+            ]
+        },
+        "GeneralSlotCount": {
+            "DefaultCount": "3",
+            "LordDefaultCount": "3",
+            "Config": [{
+                    "ExpLv": "[min-0][max-6]",
+                    "Count": "1"
+                },
+                {
+                    "ExpLv": "[min-7][max-8]",
+                    "Count": "2"
+                }
+            ],
+            "ConfigVIP": [{
+                    "VIPLv": "[min-1][max-2]",
+                    "Count": "1"
+                },
+                {
+                    "VIPLv": "[min-3][max-5]",
+                    "Count": "2"
+                },
+                {
+                    "VIPLv": "[min-6][max-65536]",
+                    "Count": "3"
+                }
+            ]
+        },
+        "BanCharacterConfig": {
+            "GameModel": [{
+                    "Desc": "标准场禁止武将",
+                    "Modle": "22",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "2",
+                            "ChrName": "关羽"
+                        },
+                        {
+                            "ChrId": "3",
+                            "ChrName": "张飞"
+                        },
+                        {
+                            "ChrId": "4",
+                            "ChrName": "诸葛亮"
+                        },
+                        {
+                            "ChrId": "5",
+                            "ChrName": "赵云"
+                        },
+                        {
+                            "ChrId": "6",
+                            "ChrName": "马超"
+                        },
+                        {
+                            "ChrId": "7",
+                            "ChrName": "黄月英"
+                        },
+                        {
+                            "ChrId": "9",
+                            "ChrName": "甘宁"
+                        },
+                        {
+                            "ChrId": "10",
+                            "ChrName": "吕蒙"
+                        },
+                        {
+                            "ChrId": "11",
+                            "ChrName": "黄盖"
+                        },
+                        {
+                            "ChrId": "12",
+                            "ChrName": "周瑜"
+                        },
+                        {
+                            "ChrId": "13",
+                            "ChrName": "大乔"
+                        },
+                        {
+                            "ChrId": "14",
+                            "ChrName": "陆逊"
+                        },
+                        {
+                            "ChrId": "25",
+                            "ChrName": "孙尚香"
+                        },
+                        {
+                            "ChrId": "16",
+                            "ChrName": "司马懿"
+                        },
+                        {
+                            "ChrId": "17",
+                            "ChrName": "夏侯惇"
+                        },
+                        {
+                            "ChrId": "18",
+                            "ChrName": "张辽"
+                        },
+                        {
+                            "ChrId": "19",
+                            "ChrName": "许褚"
+                        },
+                        {
+                            "ChrId": "20",
+                            "ChrName": "郭嘉"
+                        },
+                        {
+                            "ChrId": "21",
+                            "ChrName": "甄姬"
+                        },
+                        {
+                            "ChrId": "22",
+                            "ChrName": "华佗"
+                        },
+                        {
+                            "ChrId": "23",
+                            "ChrName": "吕布"
+                        },
+                        {
+                            "ChrId": "24",
+                            "ChrName": "貂蝉"
+                        }
+                    ],
+                    "#text": "神话在林模式下的所有场"
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 8人局1个内奸 ",
+                    "Modle": "1",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 8人局2个内奸 ",
+                    "Modle": "2",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 7人局1个内奸 ",
+                    "Modle": "3",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 6人局1个内奸 ",
+                    "Modle": "4",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 5人局1个内奸 普通场 ",
+                    "Modle": "5",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 5人局1个内奸 简易场 ",
+                    "Modle": "6",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 身份模式 9人局2个内奸 ",
+                    "Modle": "7",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 8人欢乐场",
+                    "Modle": "12",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 8人军争",
+                    "Modle": "15",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                },
+                {
+                    "Desc": "单机版,8人局禁止武将 5人军争 ",
+                    "Modle": "16",
+                    "Section": "1",
+                    "BanChr": [{
+                            "ChrId": "33",
+                            "ChrName": "于吉"
+                        },
+                        {
+                            "ChrId": "48",
+                            "ChrName": "贾诩"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Ban1v14CharacterCfg": {
+            "BanChr": [{
+                    "ChrId": "8",
+                    "ChrName": "孙权"
+                },
+                {
+                    "ChrId": "22",
+                    "ChrName": "华佗"
+                },
+                {
+                    "ChrId": "15",
+                    "ChrName": "曹操"
+                },
+                {
+                    "ChrId": "10",
+                    "ChrName": "吕蒙"
+                },
+                {
+                    "ChrId": "33",
+                    "ChrName": "于吉"
+                }
+            ]
+        },
+        "CharacterMutexConfig": {
+            "ChrMutex": [{
+                    "MutexList": "24;102;109"
+                },
+                {
+                    "MutexList": "5;108"
+                },
+                {
+                    "MutexList": "103;25"
+                },
+                {
+                    "MutexList": "107;6"
+                },
+                {
+                    "MutexList": "39;105"
+                },
+                {
+                    "MutexList": "110;48"
+                },
+                {
+                    "MutexList": "29;111"
+                },
+                {
+                    "MutexList": "57;112"
+                }
+            ],
+            "#text": "貂蝉 sp貂蝉 sp貂蝉2012\n\t\t赵云 sp赵云2012\n\t\t孙尚香 sp孙尚香\n\t\tSP马超 马超\n\t\t庞德 SP庞德 \n\t\t贾诩 SP贾诩\n\t\t曹仁 SP曹仁\n\t\t蔡文姬 SP蔡文姬"
+        },
+        "CharacterSPSelectConfig": {
+            "ChrSPList": [{
+                    "List": "24;102;109"
+                },
+                {
+                    "List": "5;108"
+                },
+                {
+                    "List": "103;25"
+                },
+                {
+                    "List": "107;6"
+                },
+                {
+                    "List": "39;105"
+                },
+                {
+                    "List": "110;48"
+                },
+                {
+                    "List": "29;111"
+                },
+                {
+                    "List": "57;112"
+                }
+            ],
+            "#text": "貂蝉的sp武将列表\n\t\t赵云的sp武将列表\n\t\t孙尚香的sp武将列表\n\t\t马超的sp武将列表\n\t\t庞德 SP庞德 \n\t\t贾诩 SP贾诩\n\t\t曹仁 SP曹仁\n\t\t蔡文姬 SP蔡文姬"
+        },
+        "ZuoCiSelChrConfig": {
+            "SelChr": [{
+                    "Desc": "所有标准武将",
+                    "MeetAssignCondition": "0",
+                    "ChrIdList": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25"
+                },
+                {
+                    "Desc": "所有风包",
+                    "MeetAssignCondition": "0",
+                    "ChrIdList": "26,27,28,29,30,31,32,33"
+                },
+                {
+                    "Desc": "所有火包",
+                    "MeetAssignCondition": "0",
+                    "ChrIdList": "34,35,36,37,38,39,40,41"
+                },
+                {
+                    "Desc": "所有林包",
+                    "MeetAssignCondition": "0",
+                    "ChrIdList": "42,43,44,45,46,47,48,49"
+                },
+                {
+                    "Desc": "所有山包",
+                    "MeetAssignCondition": "0",
+                    "ChrIdList": "50,51,52,53,54,55,56,57"
+                }
+            ]
+        },
+        "CharacterAssignRuleInFigure": {
+            "Group": [{
+                    "Id": "1",
+                    "CharList": "26,27,28,29,30,31,32,33"
+                },
+                {
+                    "Id": "2",
+                    "CharList": "34,35,36,37,38,39,40,41"
+                },
+                {
+                    "Id": "3",
+                    "CharList": "42,43,44,45,46,47,48,49"
+                }
+            ],
+            "EmperorDefault": {
+                "EmChr": [{
+                        "ChrId": "1",
+                        "ChrName": "刘备",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    },
+                    {
+                        "ChrId": "8",
+                        "ChrName": "孙权",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    },
+                    {
+                        "ChrId": "15",
+                        "ChrName": "曹操",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    },
+                    {
+                        "ChrId": "32",
+                        "ChrName": "张角",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    },
+                    {
+                        "ChrId": "41",
+                        "ChrName": "袁绍",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    },
+                    {
+                        "ChrId": "43",
+                        "ChrName": "曹丕",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    },
+                    {
+                        "ChrId": "45",
+                        "ChrName": "董卓",
+                        "UseAssignCondition": "0",
+                        "bForceCanUse": "0"
+                    }
+                ]
+            },
+            "GameModelAssign": {
+                "Desc": "全局配置",
+                "Modle": "22",
+                "Section": "1",
+                "AssignRule": [{
+                        "Kind": "1",
+                        "Chr": [{
+                                "ExtraPos": "0",
+                                "GroupId": "2",
+                                "Desc": "火包",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "0",
+                                "GroupId": "3",
+                                "Desc": "林包",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "1",
+                                "GroupId": "0",
+                                "Desc": "全部",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "1",
+                                "GroupId": "0",
+                                "Desc": "全部",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "Kind": "0",
+                        "Chr": [{
+                                "ExtraPos": "0",
+                                "GroupId": "1",
+                                "Desc": "风包",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "0",
+                                "GroupId": "2",
+                                "Desc": "火包",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "0",
+                                "GroupId": "3",
+                                "Desc": "曹操",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "1",
+                                "GroupId": "0",
+                                "Desc": "全部",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            },
+                            {
+                                "ExtraPos": "1",
+                                "GroupId": "0",
+                                "Desc": "全部",
+                                "UseAssignCondition": "0",
+                                "bForceCanUse": "0"
+                            }
+                        ]
+                    }
+                ],
+                "#text": "神话在林下的所有场"
+            }
+        },
+        "CharacterSelectRecommend": {
+            "Config": [{
+                    "gameMode": "1",
+                    "position": "1",
+                    "figure": "1",
+                    "emperorCharacterId": "15",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "1,8,15,4,16,20,10,25,22,5,18,21,14,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "27"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "41,36,37"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "46,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "1",
+                    "figure": "1",
+                    "emperorCharacterId": "1",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "15,8,15,4,16,20,10,25,22,5,18,21,14,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "27"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "41,36,37"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "46,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "1",
+                    "figure": "1",
+                    "emperorCharacterId": "8",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "15,1,15,4,16,20,10,25,22,5,18,21,14,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "27"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "41,36,37"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "46,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "1",
+                    "figure": "1",
+                    "emperorCharacterId": "0",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "4,16,20,10,25,22,5,18,21,14,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "27"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "41,36,37"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "46,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "2",
+                    "emperorCharacterId": "15",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "16,17,18,19,20,21,1,2,3,5,6,7,8,9,10,12,13,14,22,24,23"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "28,29,30,31,26,27,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,35,36,37,38,41,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,43,47,46,44,49,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "2",
+                    "emperorCharacterId": "1",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "2,3,4,5,6,7,15,16,17,18,19,20,21,8,9,10,11,12,13,14,25,22,23,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "26,27,28,29,30,31,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,35,36,37,38,41,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,43,47,46,44,49,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "2",
+                    "emperorCharacterId": "8",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "9,10,11,12,13,14,25,15,16,17,18,19,20,21,1,2,3,4,5,6,7,22,23,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "30,31,28,29,26,27,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,35,36,37,38,41,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,43,47,46,44,49,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "2",
+                    "emperorCharacterId": "32",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "22,23,24,15,16,17,18,19,20,21,1,2,3,4,5,6,7,8,9,10,11,12,13,14,25"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "28,29,30,31,26,27,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,35,36,37,38,41,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,43,47,46,44,49,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "2",
+                    "emperorCharacterId": "0",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "15,16,17,18,19,20,21,1,2,3,4,5,6,7,8,9,10,11,12,13,14,25,22,23,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "28,29,26,27,30,31,32,33"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,35,36,37,38,41,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,43,47,46,44,49,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "2",
+                    "figure": "3",
+                    "emperorCharacterId": "0",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "19,21,2,3,5,6,7,8,14,25,11,12,9,23,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "28,26,27,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,38,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,47,46,45"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "8",
+                    "figure": "3",
+                    "emperorCharacterId": "0",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "19,21,2,3,5,6,7,8,14,25,11,12,9,23,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "28,26,27,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,38,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,47,46,45"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "3",
+                    "emperorCharacterId": "0",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "15,16,17,18,19,20,21,1,2,3,4,5,6,7,8,9,10,11,12,13,14,25,22,23,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "28,29,26,27,30,31,32,33"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "34,35,36,37,38,41,40,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,43,47,46,44,49,45,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                },
+                {
+                    "gameMode": "1",
+                    "position": "0",
+                    "figure": "4",
+                    "emperorCharacterId": "0",
+                    "Character": [{
+                            "exId": "1",
+                            "charIds": "15,16,17,20,21,1,5,4,8,10,13,14,25,22,24"
+                        },
+                        {
+                            "exId": "4",
+                            "charIds": "29,26,27,30,32"
+                        },
+                        {
+                            "exId": "5",
+                            "charIds": "36,37,41,39"
+                        },
+                        {
+                            "exId": "6",
+                            "charIds": "42,47,46,44,48"
+                        },
+                        {
+                            "exId": "10",
+                            "charIds": "160,154,156,159"
+                        },
+                        {
+                            "exId": "9",
+                            "charIds": "100,103,101,102"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
