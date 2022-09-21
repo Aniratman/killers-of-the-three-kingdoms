@@ -35,6 +35,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-empty-function': 'off',
         'max-classes-per-file': 'off',
-        'no-continue': 'off'
+        'no-continue': 'off',
+        'dot-notation': 'off'
     },
 };

@@ -29,7 +29,7 @@ export default class ConfigManager {
     }
 
     async parseCharacterJson() {
-        const asset: any = await (await theResourceManager.loadResource('config/character', JsonAsset)).pop();
+        const [asset] = (await theResourceManager.loadResource('config/character', JsonAsset)) as [any];
         for (const element of asset.json.CardConfig.Character) {
             const character: Character = {
                 id: Number(element.id),
@@ -49,7 +49,7 @@ export default class ConfigManager {
     }
 
     async parseCardJson() {
-        const asset: any = await (await theResourceManager.loadResource('config/PlayCard', JsonAsset)).pop();
+        const [asset]: any = (await theResourceManager.loadResource('config/PlayCard', JsonAsset)) as [any];
 
         for (const card of asset.json.CardConfig.PlayCard) {
             this.cards.push({
@@ -69,7 +69,7 @@ export default class ConfigManager {
     }
 
     async parseSpellJson() {
-        const asset: any = await (await theResourceManager.loadResource('config/spell', JsonAsset)).pop();
+        const [asset] = (await theResourceManager.loadResource('config/spell', JsonAsset)) as [any];
         for (const spell of asset.json.CardConfig.Spell) {
             const spellId = Number(spell.id);
             if (!this.spells.has(spellId)) {

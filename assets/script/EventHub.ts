@@ -20,7 +20,7 @@ export default class EventHub<EventId> {
         const listener = this.__listeners.get(id);
         if (!listener) {
             console.error(`id:${String(id)} doesn't has listenes`);
-            return;
+            return false;
         }
         if (object) {
             listener.get(object)?.call(object, ...args);
@@ -29,6 +29,7 @@ export default class EventHub<EventId> {
                 callback.call(object, ...args);
             });
         }
+        return true;
     }
 
     removeEventListener(id: EventId, object?: Object) {

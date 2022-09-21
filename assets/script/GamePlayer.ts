@@ -2,8 +2,8 @@ import { Card, Character, Identity } from './CommonStructs';
 import { theConfigManager } from './ConfigManager';
 import Equip from './Equip';
 import EventHub from './EventHub';
-import { GameStage } from './GameEvent';
-import PlayerHandler from './PlayerHandler';
+import { PlayerBehavior } from './PlayerEvent';
+import { externGamePlayerHandlers, PlayerHandler } from './PlayerHandler';
 import Skill from './skills/Skill';
 import { querySkill } from './skills/SkillConfig';
 import { Utility } from './Utility';
@@ -14,6 +14,7 @@ export default class GamePlayer {
     public cards: Card[] = [];
 
     public identity: Identity = null;
+    public order: number = -1;
 
     public curHp: number = 0;
     public maxHp: number = 0;
@@ -26,8 +27,7 @@ export default class GamePlayer {
     public isValid: boolean = true;
 
     private readonly __character: Character = null;
-    private readonly __eventHub: EventHub<GameStage> = null;
-    private readonly __handlers: PlayerHandler = null;
+    private readonly __eventHub: EventHub<PlayerBehavior> = null;
 
     get name() {
         return this.__character.name;
@@ -55,11 +55,6 @@ export default class GamePlayer {
         this.distanceAttackHorse = 0;
         this.distanceDefanceHorse = 0;
         this.__eventHub = new EventHub();
-        this.__handlers = new PlayerHandler(this);
-    }
-
-    registerEvents() {
-        this.__handlers.registerEvents();
     }
 
     initSkills() {
@@ -108,7 +103,40 @@ export default class GamePlayer {
         this.equips.splice(index, 1);
     }
 
-    catchCards(cards: Card[]) {
+    playCard(card: Card, player?: GamePlayer) {}
+
+    gainCards(cards: Card[]) {
         this.cards = this.cards.concat(cards);
     }
+
+    loseCards(cards: Card[]) {
+        for (const card of cards) {
+            const index = this.cards.indexOf(card);
+            this.cards.splice(index, 1);
+        }
+    }
+
+    updateHp(diff: number, isLoseHP: boolean = false) {
+        this.curHp += diff;
+        if (diff > 0) {
+            // todo: 回复
+        } else if (diff < 0 && !isLoseHP) {
+            // todo: 受伤
+        } else if (diff < 0 && isLoseHP) {
+            // todo: 体力流失
+        }
+    }
+
+    updateMaxHp(diff: number) {
+        this.maxHp += diff;
+        if (this.maxHp < this.curHp) {
+            this.curHp = this.maxHp;
+        }
+        if (this.maxHp === 0) {
+            // todo: 玩家阵亡
+            this.isValid = false;
+        }
+    }
 }
+
+externGamePlayerHandlers(PlayerHandler);
