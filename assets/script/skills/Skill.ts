@@ -1,5 +1,5 @@
-import { Spell } from '../CommonStructs';
-import GamePlayer from '../GamePlayer';
+import { Spell } from '../common/CommonStructs';
+import GamePlayer from '../game/GamePlayer';
 
 export default class Skill {
     protected maxHp: number = 0;
