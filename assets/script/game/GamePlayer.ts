@@ -2,14 +2,16 @@ import { Character, Identity } from '../common/CommonStructs';
 import { theConfigManager } from '../controler/ConfigManager';
 import Equip from './Equip';
 import PlayCard from './PlayCard';
-import { externGamePlayerFunctions, PlayerHandler } from './PlayerHandler';
+import { externGamePlayerFunctions, StageHandler } from './StageHandler';
 import Robot from '../robots/Robot';
 import { RobotConfig } from '../robots/RobotConfig';
 import Skill from '../skills/Skill';
 import { querySkill } from '../skills/SkillConfig';
 import { Utility } from '../common/Utility';
+import { BehaviorListener, StageListener } from './GameInterface';
+import { BehaviorHandler } from './BehaviorHandler';
 
-export default class GamePlayer {
+export default class GamePlayer implements Partial<StageListener>, Partial<BehaviorListener> {
     public equips: Equip[] = [];
     public skills: Skill[] = [];
     public handCards: PlayCard[] = [];
@@ -23,9 +25,13 @@ export default class GamePlayer {
     public maxHp: number = 0;
     public curCardNum: number = 0;
     public maxCardNum: number = 0;
-    public distanceWeapon: number = 0;
+    public distanceWeapon: number = 1;
     public distanceAttackHorse: number = 0;
     public distanceDefanceHorse: number = 0;
+
+    public gainCardNum: number = 2;
+
+    public useWineNum: number = 0;
 
     public isValid: boolean = true;
 
@@ -63,9 +69,19 @@ export default class GamePlayer {
     static create(character: Character, identity: Identity, order: number) {
         const player = new GamePlayer(character);
         player.identity = identity;
+        player.order = order;
         player.initSkills();
-        player['registerEvents']();
+        player.registerStageEvents();
+        player.registerBehaviorEvents();
         return player;
+    }
+
+    registerStageEvents() {
+        Reflect.get(Reflect.getPrototypeOf(this), 'registerStageEvents').call(this);
+    }
+
+    registerBehaviorEvents() {
+        Reflect.get(Reflect.getPrototypeOf(this), 'registerBehaviorEvents').call(this);
     }
 
     initSkills() {
@@ -127,6 +143,7 @@ export default class GamePlayer {
         for (const card of cards) {
             const index = this.handCards.indexOf(card);
             this.handCards.splice(index, 1);
+            console.log(`${this.name}丢弃了${card.name}`);
         }
     }
 
@@ -167,4 +184,5 @@ export default class GamePlayer {
     }
 }
 
-externGamePlayerFunctions(PlayerHandler);
+externGamePlayerFunctions(StageHandler);
+externGamePlayerFunctions(BehaviorHandler);

@@ -21,4 +21,8 @@ export default class Equip {
     removeFromPlayer() {
         this.__player.removeSkill(this.__card.spell);
     }
+
+    isWeapon() {
+        return false;
+    }
 }

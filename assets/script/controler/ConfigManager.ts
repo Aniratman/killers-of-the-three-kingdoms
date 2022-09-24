@@ -1,5 +1,5 @@
 import { JsonAsset } from 'cc';
-import { Card, CardSubType, Character, Spell } from '../common/CommonStructs';
+import { Card, Character, Spell } from '../common/CommonStructs';
 import { theResourceManager } from './ResourceManger';
 
 export default class ConfigManager {
@@ -56,13 +56,13 @@ export default class ConfigManager {
                 id: Number(card.id),
                 name: card.name,
                 cardType: Number(card.cardType),
-                cardSubType: Number(CardSubType),
+                cardSubType: Number(card.cardSubType),
                 number: Number(card.number),
                 color: Number(card.color),
                 distanceWeapon: Number(card.distanceWeapon),
                 distanceAttackHorse: Number(card.distanceAttackHorse),
                 distanceDefanceHorse: Number(card.distanceDefanceHorse),
-                spell: Number(card.spell),
+                spell: Number(card.spellId),
                 pictureId: Number(card.pictureId),
             });
         }

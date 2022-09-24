@@ -8,7 +8,7 @@ export enum GameStage {
     GAME_PERSONAL_JUDGE, // 单一玩家判定阶段
     GAME_PERSONAL_DEAL_CARD, // 单一玩家摸牌阶段
     GAME_PERSONAL_PLAY_CARD, // 单一玩家出牌阶段
-    GAME_PERSONAL_GARBAGE_CARD, // 单一玩家弃牌阶段
+    GAME_PERSONAL_LOSE_CARD, // 单一玩家弃牌阶段
     GAME_PERSONAL_FINISH, // 单一玩家结束阶段
     GAME_ROUND_FINISH, // 单轮游戏结束
     GAME_END, // 整局游戏结束

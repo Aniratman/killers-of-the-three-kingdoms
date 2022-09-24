@@ -1,6 +1,6 @@
-import { assetManager, director, Game, ISchedulable, math } from 'cc';
+import { director, ISchedulable, math } from 'cc';
 import { cloneDeep, shuffle } from 'lodash-es';
-import { Character, Identity } from '../common/CommonStructs';
+import { Character, Identity, NumberIndexSet } from '../common/CommonStructs';
 import { theConfigManager } from './ConfigManager';
 import GameEvent, { GameStage } from './GameEvent';
 import GamePlayer from '../game/GamePlayer';
@@ -8,11 +8,13 @@ import GeneratorStack, { GeneratorNextData } from '../common/GeneratorStack';
 import PlayCard from '../game/PlayCard';
 import { Utility } from '../common/Utility';
 
-const IdentityConfig: { [index: number]: Identity[] } = {
+const IdentityConfig: NumberIndexSet<Identity[]> = {
     2: [Identity.Emperor, Identity.Rebel],
     5: [Identity.Emperor, Identity.Minister, Identity.Rebel, Identity.Rebel, Identity.Provocateur],
     8: [Identity.Emperor, Identity.Minister, Identity.Minister, Identity.Rebel, Identity.Rebel, Identity.Rebel, Identity.Rebel, Identity.Provocateur],
 };
+
+export type GeneratorStage = Generator<boolean, GameStage, GeneratorNextData<unknown>>;
 
 export default class GameManager extends GameEvent implements ISchedulable {
     private static __instance: GameManager = null;
@@ -36,10 +38,24 @@ export default class GameManager extends GameEvent implements ISchedulable {
     public characters: Character[] = null;
     public gamePlayers: GamePlayer[] = null;
 
-    public identitySets: { [index: number]: number } = null;
+    public identitySets: NumberIndexSet<number> = null;
 
-    public isResponse: boolean = false;
+    public isScheduler: boolean = false;
     public gameStage: GameStage = null;
+
+    getResponse() {
+        return this.__generatorStack && this.__generatorStack.getResponse();
+    }
+
+    setResponse(response: boolean, generator?: GeneratorStage) {
+        if (this.__generatorStack) {
+            this.__generatorStack.setResponse(response, generator);
+        }
+    }
+
+    get currentPlayer() {
+        return this.gamePlayers[this.curOrder];
+    }
 
     private __generatorStack: GeneratorStack<boolean, GameStage, GeneratorNextData<unknown>> = null;
 
@@ -69,10 +85,12 @@ export default class GameManager extends GameEvent implements ISchedulable {
 
     initIdentities() {
         this.identities = shuffle(cloneDeep(IdentityConfig[this.__playerNum]));
+        const index = this.identities.indexOf(Identity.Emperor);
+        this.identities = this.identities.splice(index).concat(this.identities.slice(0, index));
     }
 
     initGameOrder() {
-        const index = Utility.indexOf(this.identities, (identity) => identity === Identity.Emperor);
+        const index = this.identities.indexOf(Identity.Emperor);
         this.curOrder = index;
     }
 
@@ -142,21 +160,28 @@ export default class GameManager extends GameEvent implements ISchedulable {
     }
 
     calculateDistanceOfPlayers(own: GamePlayer, other: GamePlayer) {
-        const ownIndex = Utility.indexOf(this.gamePlayers, own);
-        const otherIndex = Utility.indexOf(this.gamePlayers, other);
-        if (ownIndex < 0 || otherIndex < 0) {
-            return -1;
+        let ownIndex = Utility.indexOf(this.gamePlayers, own);
+        let otherIndex = Utility.indexOf(this.gamePlayers, other);
+        const dist = Math.abs(otherIndex - ownIndex);
+        if (dist <= 1) {
+            return dist + other.distanceDefanceHorse - own.distanceAttackHorse;
         }
-        const dinstance = Math.abs(ownIndex - otherIndex) + other.distanceDefanceHorse - own.distanceAttackHorse;
+
+        if (ownIndex < otherIndex) {
+            ownIndex += otherIndex;
+            otherIndex = ownIndex - otherIndex;
+            ownIndex -= otherIndex;
+        }
+        const left = this.gamePlayers.slice(otherIndex);
+        const right = this.gamePlayers.slice(0, ownIndex + 1);
+
+        const dinstance = Math.min(dist, left.length + right.length - 1) + other.distanceDefanceHorse - own.distanceAttackHorse;
         return dinstance;
     }
 
     calculateAttackDistanceOfPlayers(own: GamePlayer, other: GamePlayer) {
         const baseDistance = this.calculateDistanceOfPlayers(own, other);
-        if (baseDistance < 0) {
-            return -1;
-        }
-        return baseDistance + own.distanceWeapon;
+        return baseDistance - own.distanceWeapon;
     }
 
     startGame() {
@@ -164,8 +189,7 @@ export default class GameManager extends GameEvent implements ISchedulable {
             const cards = this.dealCards(4);
             this.gamePlayers[i].gainCards(cards);
         }
-        this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_START));
-        this.startStageScheduler();
+        this.switchCurrentStage(GameStage.GAME_START, this.gamePlayers);
     }
 
     setCurrentOrder(order: number) {
@@ -179,42 +203,18 @@ export default class GameManager extends GameEvent implements ISchedulable {
         }
     }
 
-    queryFirstPlayerOneRound() {
-        for (let i = 0; i < this.gamePlayers.length; ++i) {
-            if (this.gamePlayers[i].identity === Identity.Emperor) {
+    queryLastPlayerOneRound() {
+        for (let i = this.gamePlayers.length - 1; i > 0; i--) {
+            if (this.gamePlayers[i].isValid) {
                 return i;
             }
         }
-        return 0;
+        return this.gamePlayers.length - 1;
     }
 
-    queryLastPlayerOneRound() {
-        const order = this.queryFirstPlayerOneRound();
-
-        let index = order - 1 < 0 ? this.gamePlayers.length - 1 : order - 1;
-        let flag: boolean = false;
-        for (let i = index; i > 0; i--) {
-            if (this.gamePlayers[i].isValid) {
-                index = i;
-                flag = true;
-                break;
-            }
-        }
-        if (!flag) {
-            for (let i = this.gamePlayers.length - 1; i > order; i--) {
-                if (this.gamePlayers[i].isValid) {
-                    index = i;
-                    break;
-                }
-            }
-        }
-        return index;
-    }
-
-    *createStageEventTriggerGenerator(stage: GameStage) {
+    *createStageEventTriggerGenerator(stage: GameStage, players: GamePlayer[]) {
         console.time('RESPONCE_STAGE');
-        for (let i = 0; i < this.gamePlayers.length; ++i) {
-            const player = this.gamePlayers[i];
+        for (const player of players) {
             if (!player.isValid) {
                 continue;
             }
@@ -229,82 +229,108 @@ export default class GameManager extends GameEvent implements ISchedulable {
     }
 
     startStageScheduler() {
-        this.__generatorStack.next();
+        this.isScheduler = true;
         director.getScheduler().schedule(this.scheduleUpdate, this, 0.1);
     }
 
     private scheduleUpdate() {
-        if (this.__generatorStack && this.isResponse) {
-            this.isResponse = false;
+        if (this.__generatorStack && this.__generatorStack.isComplete()) {
+            this.stopStageScheduler();
+            return;
+        }
+
+        if (this.__generatorStack && this.getResponse()) {
+            this.setResponse(false);
             const iterResult = this.__generatorStack.next({});
-            if (iterResult.done && this.__generatorStack.isComplete()) {
-                this.stopStageGenerator();
-                return;
-            }
+
             if (iterResult.done) {
                 const stage = iterResult.value as GameStage;
-                this.switchStage(stage);
-                this.__generatorStack.next();
+                const [nextStage, players] = this.queryNextStage(stage);
+                this.switchCurrentStage(nextStage, players);
             } else if (!iterResult.value) {
                 console.error('当前阶段回调失败');
             }
         }
     }
 
-    switchStage(stage: GameStage) {
-        switch (stage) {
+    switchCurrentStage(stage: GameStage, players: GamePlayer[]) {
+        this.gameStage = stage;
+        this.__generatorStack.push(this.createStageEventTriggerGenerator(stage, players));
+        if (!this.isScheduler) {
+            this.startStageScheduler();
+        }
+        this.__generatorStack.next();
+    }
+
+    queryNextStage(curStage: GameStage): [GameStage, GamePlayer[]] {
+        let nextStage: GameStage = null;
+        let players: GamePlayer[] = [];
+        switch (curStage) {
             case GameStage.GAME_START:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_ROUND_BEGIN));
+                nextStage = GameStage.GAME_ROUND_BEGIN;
+                players = this.gamePlayers;
                 break;
             case GameStage.GAME_ROUND_BEGIN:
-                this.roundNum++;
                 console.log(`*********当前进行第${this.roundNum}轮*********`);
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_PREPARE));
+                nextStage = GameStage.GAME_PERSONAL_PREPARE;
+                players = [this.gamePlayers[this.curOrder]];
                 break;
             case GameStage.GAME_PERSONAL_PREPARE:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_JUDGE));
+                nextStage = GameStage.GAME_PERSONAL_JUDGE;
+                players = this.gamePlayers;
                 break;
             case GameStage.GAME_PERSONAL_JUDGE:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_DEAL_CARD));
+                nextStage = GameStage.GAME_PERSONAL_DEAL_CARD;
+                players = [this.gamePlayers[this.curOrder]];
                 break;
             case GameStage.GAME_PERSONAL_DEAL_CARD:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_PLAY_CARD));
+                nextStage = GameStage.GAME_PERSONAL_PLAY_CARD;
+                players = [this.gamePlayers[this.curOrder]];
                 break;
             case GameStage.GAME_PERSONAL_PLAY_CARD:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_GARBAGE_CARD));
+                nextStage = GameStage.GAME_PERSONAL_LOSE_CARD;
+                players = this.gamePlayers;
                 break;
-            case GameStage.GAME_PERSONAL_GARBAGE_CARD:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_FINISH));
+            case GameStage.GAME_PERSONAL_LOSE_CARD:
+                nextStage = GameStage.GAME_PERSONAL_FINISH;
+                players = this.gamePlayers;
                 break;
             case GameStage.GAME_PERSONAL_FINISH:
                 console.log(`*********座位${this.curOrder}号玩家回合结束*********`);
                 this.switchCurrentOrder();
-
                 if (this.curOrder === this.queryLastPlayerOneRound()) {
-                    this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_ROUND_FINISH));
+                    nextStage = GameStage.GAME_ROUND_FINISH;
+                    players = this.gamePlayers;
                 } else {
-                    this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_PERSONAL_PREPARE));
+                    nextStage = GameStage.GAME_PERSONAL_PREPARE;
+                    players = [this.gamePlayers[this.curOrder]];
                 }
                 break;
             case GameStage.GAME_ROUND_FINISH:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_ROUND_BEGIN));
+                this.roundNum++;
+                players = this.gamePlayers;
+                nextStage = GameStage.GAME_ROUND_BEGIN;
                 break;
             case GameStage.GAME_END:
-                this.__generatorStack.push(this.createStageEventTriggerGenerator(GameStage.GAME_START));
+                nextStage = GameStage.GAME_START;
                 break;
             default:
+                nextStage = GameStage.GAME_START;
+                players = this.gamePlayers;
                 break;
         }
+        return [nextStage, players];
     }
 
-    stopStageGenerator() {
+    stopStageScheduler() {
+        this.isScheduler = false;
         director.getScheduler().unschedule(this.scheduleUpdate, this);
     }
 
     queryPlayersByIdentity(identity: Identity) {
         const players: GamePlayer[] = [];
         for (const player of this.gamePlayers) {
-            if (player.isValid && player.id === identity) {
+            if (player.isValid && player.identity === identity) {
                 players.push(player);
             }
             if (players.length === this.identities[identity]) {
@@ -312,6 +338,12 @@ export default class GameManager extends GameEvent implements ISchedulable {
             }
         }
         return players;
+    }
+
+    convertPlayersByOrder(order: number = this.curOrder) {
+        let ret: GamePlayer[] = [];
+        ret = ret.concat(this.gamePlayers.slice(order)).concat(this.gamePlayers.slice(0, order));
+        return ret;
     }
 }
 
