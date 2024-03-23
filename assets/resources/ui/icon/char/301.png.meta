@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.24",
+  "ver": "1.0.26",
   "importer": "image",
   "imported": true,
   "uuid": "58502ad7-8694-4fca-a7c4-5e9084f94b4a",
@@ -23,7 +23,7 @@
         "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "58502ad7-8694-4fca-a7c4-5e9084f94b4a",
-        "visible": true
+        "visible": false
       },
       "ver": "1.0.22",
       "imported": true,

@@ -1,58 +1,61 @@
 {
-    "name": "killers-of-the-three-kingdoms",
-    "version": "3.6.0",
-    "description": "三国杀轻量版",
-    "main": "index.js",
-    "type": "commonjs",
-    "scripts": {
-        "test": "echo init",
-        "prepare": "husky install",
-        "lint": "npx prettier --config .prettierrc.js --write ./**/**/*.ts",
-        "changelog": "npx conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js",
-        "commit": "git add . && cz",
-        "cz": "cz"
-    },
-    "keywords": [
-        "init"
-    ],
-    "author": "wxc",
-    "license": "ISC",
-    "dependencies": {
-        "lodash-es": "^4.17.21"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^17.0.2",
-        "@commitlint/config-conventional": "^17.0.2",
-        "@types/lodash-es": "^4.17.6",
-        "@typescript-eslint/eslint-plugin": "^5.36.0",
-        "@typescript-eslint/parser": "^5.36.0",
-        "commitizen": "^4.2.4",
-        "compare-func": "^2.0.0",
-        "conventional-changelog": "^3.1.25",
-        "conventional-changelog-cli": "^2.2.2",
-        "conventional-changelog-custom-config": "^0.3.1",
-        "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^8.18.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "husky": "^8.0.0",
-        "lint-staged": "^13.0.2",
-        "prettier": "^2.7.1",
-        "typescript": "^4.7.4"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    },
-    "lint-staged": {
-        "*.ts": [
-            "npx eslint --fix",
-            "npx prettier .prettierrc.js --write",
-            "git add"
-        ]
-    },
-    "uuid": "7b829bff-727b-4bd9-9f4a-4b152c848952"
+  "name": "killers-of-the-three-kingdoms",
+  "version": "3.6.0",
+  "description": "三国杀轻量版",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo init",
+    "prepare": "husky install",
+    "lint": "npx prettier --config .prettierrc.js --write ./**/**/*.ts",
+    "changelog": "npx conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js",
+    "commit": "git add . && cz",
+    "cz": "cz"
+  },
+  "keywords": [
+    "init"
+  ],
+  "author": "wxc",
+  "license": "ISC",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@types/lodash-es": "^4.17.6",
+    "@typescript-eslint/eslint-plugin": "^5.36.0",
+    "@typescript-eslint/parser": "^5.36.0",
+    "commitizen": "^4.2.4",
+    "compare-func": "^2.0.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-custom-config": "^0.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npx eslint --fix",
+      "npx prettier .prettierrc.js --write",
+      "git add"
+    ]
+  },
+  "uuid": "7b829bff-727b-4bd9-9f4a-4b152c848952",
+  "creator": {
+    "version": "3.8.2"
+  }
 }

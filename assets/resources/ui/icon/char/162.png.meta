@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.24",
+  "ver": "1.0.26",
   "importer": "image",
   "imported": true,
   "uuid": "1faceae7-b917-4598-ab68-9eecf7a5f3a6",
@@ -23,7 +23,7 @@
         "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "1faceae7-b917-4598-ab68-9eecf7a5f3a6",
-        "visible": true
+        "visible": false
       },
       "ver": "1.0.22",
       "imported": true,
