@@ -1,1 +1,9 @@
-{}
+{
+  "disable-packages": {
+    "C:\\Users\\Begin\\": {
+      "CocosCreator\\builtin-extensions\\3": {
+        "8": {}
+      }
+    }
+  }
+}

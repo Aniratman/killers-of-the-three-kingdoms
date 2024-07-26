@@ -1,6 +1,70 @@
 {
-  "log": {
-    "level": 4
+  "log": {},
+  "__version__": "1.3.8",
+  "common": {
+    "polyfills": {
+      "asyncFunctions": true
+    },
+    "md5Cache": true,
+    "skipCompressTexture": true
   },
-  "__version__": "1.3.7"
+  "BuildTaskManager": {
+    "taskMap": {
+      "1714993128533": {
+        "type": "build",
+        "id": "1714993128533",
+        "progress": 1,
+        "state": "success",
+        "stage": "run",
+        "message": "2024-5-6 19:08:40 run package F:\\MyGit\\Killers of the  Three Kingdoms\\build\\web-desktop success!",
+        "options": {
+          "name": "killers-of-the-three-kingdoms",
+          "server": "",
+          "platform": "web-desktop",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": true,
+          "skipCompressTexture": true,
+          "sourceMaps": false,
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "useBuiltinServer": false,
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "efa1b3d3-2e74-437c-b4e2-c4792d538d71",
+          "outputName": "web-desktop",
+          "taskName": "web-desktop",
+          "scenes": [
+            {
+              "url": "db://assets/scene/scene.scene",
+              "uuid": "efa1b3d3-2e74-437c-b4e2-c4792d538d71"
+            }
+          ],
+          "packages": {},
+          "__version__": "1.3.7",
+          "buildMode": "normal",
+          "logDest": "project://temp/builder/log/web-desktop2024-5-6 18-58.log",
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting",
+              "gfx-webgl2": "inherit-project-setting"
+            },
+            "macroConfig": {
+              "cleanupImageCache": "inherit-project-setting"
+            }
+          }
+        },
+        "time": "2024-5-6 19:07:36",
+        "dirty": false
+      }
+    }
+  }
 }
