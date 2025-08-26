@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'kingdom'
-    }
-
-  }
+  agent any
   stages {
     stage('daa') {
       steps {
